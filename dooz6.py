@@ -7,4 +7,4 @@ def render():
         x, y, IMAGE = image
         SCREEN.blit(IMAGE, (x - IMAGE.get_width() // 2, y - IMAGE.get_height() // 2))
 
-    pygame.display.update()
+    pg.display.update()
