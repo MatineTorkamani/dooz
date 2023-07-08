@@ -8,8 +8,8 @@ def draw_grid():
 
     for i in range(ROWS):
         x = i * gap
-        pg.draw.line(window, BLACK, (x, 0), (x, WIDTH), 3)
-        pg.draw.line(window, BLACK, (0, x), (WIDTH, x), 3)
+        pg.draw.line(screen, BLACK, (x, 0), (x, WIDTH), 3)
+        pg.draw.line(screen, BLACK, (0, x), (WIDTH, x), 3)
 
 def initial_grid():
     dis_to_center = WIDTH // ROWS // 2
@@ -39,13 +39,13 @@ def click(game_array):
 
             if dis < WIDTH // ROWS // 2 and can_play:
                 if cat_turn:  
-                    images.append((x, y, CAT_IMAGE))
+                    images.append((x, y, cat_img))
                     cat_turn = False
                     mouse_turn = True
                     game_array[i][j] = (x, y, 'cat', False)
 
                 elif mouse_turn:  
-                    images.append((x, y, MOUSE_IMAGE))
+                    images.append((x, y,mause_img))
                     cat_turn = True
                     mouse_turn = False
                     game_array[i][j] = (x, y, 'mouse', False)
