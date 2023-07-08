@@ -8,8 +8,8 @@ def draw_grid():
 
     for i in range(ROWS):
         x = i * gap
-        pygame.draw.line(window, BLACK, (x, 0), (x, WIDTH), 3)
-        pygame.draw.line(window, BLACK, (0, x), (WIDTH, x), 3)
+        pg.draw.line(window, BLACK, (x, 0), (x, WIDTH), 3)
+        pg.draw.line(window, BLACK, (0, x), (WIDTH, x), 3)
 
 def initial_grid():
     dis_to_center = WIDTH // ROWS // 2
