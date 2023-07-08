@@ -13,10 +13,10 @@ def main():
     game_array = initial_grid()
 
     while run:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-            if event.type == pygame.MOUSEBUTTONDOWN:
+        for event in pg.event.get():
+            if event.type == pg.QUIT:
+                pg.quit()
+            if event.type == pg.MOUSEBUTTONDOWN:
                 click(game_array)
 
         render()
