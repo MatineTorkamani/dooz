@@ -24,7 +24,7 @@ cat_name='data/cat.png'
 cat_img=pg.image.load(cat_name)
 cat_img=pg.transform.scale(cat_img,(150,150))
 
-mouse_name='data/mause.png'
+mouse_name='data/mouse.png'
 mouse_img=pg.image.load(mouse_name)
 mouse_img=pg.transform.scale(mouse_img,(150,150))
 
