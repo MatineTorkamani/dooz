@@ -45,7 +45,7 @@ def click(game_array):
                     game_array[i][j] = (x, y, 'cat', False)
 
                 elif mouse_turn:  
-                    images.append((x, y,mause_img))
+                    images.append((x, y,mouse_img))
                     cat_turn = True
                     mouse_turn = False
                     game_array[i][j] = (x, y, 'mouse', False)
