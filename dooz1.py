@@ -26,6 +26,6 @@ cat_img=pg.transform.scale(cat_img,(150,150))
 
 mouse_name='data/mause.png'
 mouse_img=pg.image.load(mouse_name)
-maouse_img=pg.transform.scale(mouse_img,(150,150))
+mouse_img=pg.transform.scale(mouse_img,(150,150))
 
 END_FONT = pg.font.SysFont('arial', 50)
